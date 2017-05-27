@@ -3,4 +3,8 @@
 Find the sum of all the multiples of 3 or 5 below 1000.'''
 
 def 3and5(limit):
-    
+    mults = []
+    for i in range(1, limit):
+        if i % 5 or i % 3:
+            mults.append(i)
+    return sum(mults)
