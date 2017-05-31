@@ -10,7 +10,7 @@ def prime_factors(n=600851475143):
     if x % 2 == 0:
         factors.append(2)
         x /= 2
-    for i in range(3, floor(sqrt(x)), 2): #
+    for i in range(3, floor(sqrt(x)), 2):
         if  x % i == 0:
             factors.append(i)
             x /= i
